@@ -7,13 +7,12 @@ import hashlib
 # Function to connect to the database
 def connect_to_database():
     return mysql.connector.connect(
-        host="localhost",
-        port=3306,  # Specify the port separately
+        host="127.0.0.1",  # Use IPv4 loopback address
+        port=3306,
         user="root",
         password="Qunta729",
         database="blog"
     )
-
 
 # CRUD Operations (placeholders)
 def read_posts(offset, limit):
