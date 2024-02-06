@@ -8,10 +8,12 @@ import hashlib
 def connect_to_database():
     return mysql.connector.connect(
         host="localhost",
+        port=3306,  # Specify the port separately
         user="root",
         password="Qunta729",
         database="blog"
     )
+
 
 # CRUD Operations (placeholders)
 def read_posts(offset, limit):
